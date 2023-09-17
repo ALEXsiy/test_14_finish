@@ -1,4 +1,4 @@
-package com.baturin.test_14;
+package com.baturin.test_14.models;
 
 import java.time.LocalDate;
 

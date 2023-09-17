@@ -1,6 +1,6 @@
-package com.baturin.test_14;
+package com.baturin.test_14.controllers;
 //CRUD Create (создание), Read (чтение), Update (модификация) и Delete (удаление)
-import com.baturin.test_14.Message;
+import com.baturin.test_14.models.Message;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

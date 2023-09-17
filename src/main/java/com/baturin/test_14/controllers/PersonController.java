@@ -1,6 +1,6 @@
-package com.baturin.test_14;
+package com.baturin.test_14.controllers;
 
-import com.baturin.test_14.Person;
+import com.baturin.test_14.models.Person;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,7 +21,7 @@ public class PersonController {
             new Person(4, "Максим", "Яковлевич", "Окопский", LocalDate.of(1978, 6,5))
     ));
     //сеттер
-    @PostMapping("/persons")
+    @PostMapping("/person")
     public ResponseEntity<Person> setPerson(@RequestBody Person person) {
         persons.add(person);
         return new ResponseEntity<>(person, HttpStatus.CREATED);
